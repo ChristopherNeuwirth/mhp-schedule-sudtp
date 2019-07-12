@@ -7,7 +7,7 @@
         <span class="schedule__time--minute">{{ item.time.minute }}</span>
       </div>
     </v-flex>
-    <v-flex xs12 sm11>
+    <v-flex xs12 sm11 style="padding-top: 4px;">
       <div>
         <h2 class="schedule__item-headline">{{ item.headline }}</h2>
       </div>
