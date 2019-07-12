@@ -1,9 +1,10 @@
 export interface ScheduleItem {
   headline: string;
-  description: string;
+  description?: string;
   time: Time;
-  tags: ScheduleTag[];
-  speaker: Speaker;
+  tags?: ScheduleTag[];
+  speaker?: Speaker;
+  icon?: string;
 }
 
 export interface ScheduleTag {

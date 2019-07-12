@@ -1,5 +1,6 @@
 <template>
   <v-layout class="schedule__wrapper" wrap>
+    <img v-if="item.icon" v-bind:src="item.icon" class="schedule__icon" alt="Icon" />
     <v-flex xs12 sm1>
       <div class="grey--text lighten-5 schedule__time">
         <span class="schedule__time--hour">{{ item.time.hour }}</span>
@@ -10,8 +11,9 @@
       <div>
         <h2 class="schedule__item-headline">{{ item.headline }}</h2>
       </div>
-      <a class="schedule__item-read-more" @click="showHideDescription">More...</a>
+      <a v-if="item.description" class="schedule__item-read-more" @click="showHideDescription">More...</a>
       <div
+        v-if="item.description"
         class="schedule__item-text schedule__item-text--hide grey--text text--lighten-1"
         v-bind:class="{ 'schedule__item-text--show': !hidden }"
       >
@@ -20,7 +22,7 @@
       <v-layout align-start justify-end row class="schedule__item-tag-wrapper">
         <div class="schedule__item-tag" v-for="(tag, index) in item.tags" v-bind:key="index">{{ tag }}</div>
       </v-layout>
-      <div>
+      <div v-if="item.speaker">
         <v-layout align-start justify-start fill-height>
           <div class="schedule__item-image-wrapper">
             <v-avatar :tile="false" :size="40" color="grey lighten-4 elevation-3">
@@ -62,6 +64,18 @@ export default class ScheduleItemElement extends Vue {
 .schedule {
   &__wrapper {
     padding: 0 rem(10px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__icon {
+    opacity: 0.1;
+    display: block;
+    position: absolute;
+    width: rem(80px);
+    height: auto;
+    right: 20px;
+    bottom: -3px;
   }
 
   &__time {
