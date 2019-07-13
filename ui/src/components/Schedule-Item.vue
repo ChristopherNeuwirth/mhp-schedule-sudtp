@@ -107,7 +107,7 @@ export default class ScheduleItemElement extends Vue {
     line-height: rem(22px);
     padding: rem(10px) 0 rem(20px) 0;
     margin-bottom: rem(20px);
-    transition: max-height 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
 
     @include breakpoint('s') {
       max-width: 80%;
@@ -117,10 +117,12 @@ export default class ScheduleItemElement extends Vue {
       max-height: 0px;
       overflow: hidden;
       padding: 0;
+      opacity: 0;
     }
 
     &--show {
       height: auto;
+      opacity: 1;
       max-height: rem(200px);
     }
   }
