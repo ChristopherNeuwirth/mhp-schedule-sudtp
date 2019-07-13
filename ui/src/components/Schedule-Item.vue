@@ -121,7 +121,7 @@ export default class ScheduleItemElement extends Vue {
 
     &--show {
       height: auto;
-      max-height: 300px;
+      max-height: rem(200px);
     }
   }
 
