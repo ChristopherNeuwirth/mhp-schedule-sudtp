@@ -135,7 +135,7 @@ export default class ScheduleItemElement extends Vue {
     display: inline-block;
     background: #f9f9f9;
     border: rem(1px) solid #d4d4d4;
-    padding: rem(1px) rem(7px) 0 rem(7px);
+    padding: 0 rem(7px) 0 rem(7px);
     border-radius: rem(5px);
     margin: 0 rem(2px);
     text-transform: uppercase;
