@@ -1,6 +1,6 @@
 <template>
   <div class="tab__wrapper">
-    <v-tabs v-model="active" color="light-blue darken-4" dark slider-color="yellow">
+    <v-tabs v-model="active" color="#004b86" dark slider-color="#ffdb1a">
       <div class="white--text tab__heading">Date:</div>
       <v-tab ripple> 18. Oktober </v-tab>
       <v-tab-item v-for="n in 3" :key="n"> </v-tab-item>
@@ -13,21 +13,7 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Tabs extends Vue {
-  // @Prop() private propMessage!: string;
-  // initial data
   private active: number = 0;
-  // pass Props to component: <Component prop-message="Hello World"></Component>
-  // use prop values for initial data
-  // private helloMsg = 'Hello, ' + this.propMessage;
-  // computed
-  // get computedMsg() {
-  //   return 'computed ' + this.propMessage;
-  // }
-  // lifecycle hook
-  // protected mounted() {
-  //   // do sth
-  // }
-  // methods
 }
 </script>
 

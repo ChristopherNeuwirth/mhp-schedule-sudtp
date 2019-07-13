@@ -2,9 +2,11 @@
   <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
-        <v-img :src="require('./assets/mhp-logo.png')" class="mhp__logo"></v-img>
-        <span class="mhp__headline">MHP</span>
-        <span class="font-weight-light">SUDTP</span>
+        <div class="goToHome" @click="goToHome">
+          <v-img :src="require('./assets/mhp-logo.png')" class="mhp__logo"></v-img>
+          <span class="mhp__headline">MHP</span>
+          <span class="font-weight-light">SUDTP</span>
+        </div>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn flat to="/">
@@ -21,9 +23,31 @@
   </v-app>
 </template>
 
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import router from './router';
+
+@Component
+export default class App extends Vue {
+  private goToHome() {
+    router.push({ path: '/' });
+  }
+}
+</script>
+
 <style lang="scss">
 @import './style/mixins/breakpoint.scss';
+@import './style/mixins/animations.scss';
 @import './style/index.scss';
+
+.goToHome {
+  cursor: pointer;
+  @include base-transition;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
 
 .mhp {
   &__logo {
