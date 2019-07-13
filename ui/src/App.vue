@@ -20,14 +20,19 @@
     <v-content>
       <router-view />
     </v-content>
+
+    <footer-component></footer-component>
   </v-app>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import FooterComponent from '@/components/Footer.vue';
 import router from './router';
 
-@Component
+@Component({
+  components: { FooterComponent }
+})
 export default class App extends Vue {
   private goToHome() {
     router.push({ path: '/' });
