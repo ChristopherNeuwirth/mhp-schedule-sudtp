@@ -5,10 +5,11 @@
       <div class="fold__container">
         <h1 class="fold__headline">If you can dream it, you can do it. Welcome to the SUDTP AgileDay</h1>
         <v-flex xs12 text-xs-center class="fold__buttons">
-          <v-btn outline color="white" @click="$vuetify.goTo('#about', { duration: 400, offset: 10 })"
+          <!-- DEACTIVATED Vuetify Scroll Bug on Safari -->
+          <!-- <v-btn outline color="white" @click="$vuetify.goTo('#about', { duration: 400, offset: 10 })"
             >Mehr Erfahren</v-btn
-          >
-          <v-btn outline color="white" to="/schedule">Agenda</v-btn>
+          > -->
+          <v-btn outline large color="white" to="/schedule">Was dich erwartet</v-btn>
         </v-flex>
       </div>
     </v-flex>

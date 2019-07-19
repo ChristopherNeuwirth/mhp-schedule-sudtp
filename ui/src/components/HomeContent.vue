@@ -27,8 +27,11 @@
       <v-container>
         <v-layout wrap>
           <v-flex xs12>
-            <h2 class="section-headline">Datum</h2>
-            <p>Datum/ Zeit 18.10.2019 09:00 bis 15 Uhr //MAKE COOL</p>
+            <h2 class="section-headline">Wann</h2>
+            <div class="centering">
+              <p class="headline">Freitag, 18.10.2019</p>
+              <p class="title">09:00 bis 15 Uhr</p>
+            </div>
           </v-flex>
         </v-layout>
       </v-container>
@@ -37,7 +40,9 @@
       <v-layout wrap>
         <v-flex xs12>
           <h2 class="section-headline">Location</h2>
-          <p>MHP Lab Ludwigsburg Hindenburgstrasse 45</p>
+          <div class="centering">
+            <p class="headline">MHP Lab Ludwigsburg Hindenburgstrasse 45</p>
+          </div>
         </v-flex>
         <v-flex xs12>
           <div class="map mapboxgl-map">
@@ -133,6 +138,7 @@ export default class HomeContent extends Vue {
 .map {
   width: 100%;
   height: rem(350px);
+  margin-top: rem(70px);
 }
 
 .cta {
@@ -141,6 +147,10 @@ export default class HomeContent extends Vue {
 
 .subheading {
   line-height: rem(33px);
+}
+
+.centering {
+  text-align: center;
 }
 
 .illustration {

@@ -2,8 +2,10 @@
   <v-footer dark height="auto">
     <v-card class="flex" flat tile>
       <v-card-title class="color--primary">
-        <v-btn flat small to="/impressum">Impressum</v-btn>
-        <v-btn flat small to="/privacy">Privacy</v-btn>
+        <div class="buttonrow">
+          <v-btn flat small to="/impressum">Impressum</v-btn>
+          <v-btn flat small to="/privacy">Privacy</v-btn>
+        </div>
         <v-spacer></v-spacer>
       </v-card-title>
 
@@ -25,9 +27,14 @@ export default class Footer extends Vue {}
 <style scoped lang="scss">
 @import '../style/base/colors.scss';
 
+.buttonrow {
+  width: 100%;
+  text-align: center;
+}
+
 .color {
   &--primary {
-    background: $blue-dark;
+    background: #232323;
   }
   &--secondary {
     background: #2f2f2f;
