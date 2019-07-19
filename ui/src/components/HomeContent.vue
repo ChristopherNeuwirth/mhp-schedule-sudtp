@@ -1,10 +1,7 @@
 <template>
   <v-container>
     <v-layout wrap>
-      <v-flex xs12 text-xs-center>
-        <h1 class="display-1 font-weight-bold mb-3">AgileDay@SUDTP</h1>
-      </v-flex>
-      <v-flex xs12>
+      <v-flex xs12 id="about">
         <p>Add Countdown visible as long as not at deadline</p>
 
         <h2>Summary</h2>
