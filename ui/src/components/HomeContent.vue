@@ -18,7 +18,6 @@
         </p>
         <p>Datum/ Zeit 18.10.2019 09:00 bis 15 Uhr //MAKE COOL</p>
         <p>Ort MHP Lab Ludwigsburg Hindenburgstrasse 45 //MAKE MAP</p>
-        <p>CTA Agenda</p>
       </v-flex>
       <v-flex xs12>
         <div class="map mapboxgl-map">
@@ -34,6 +33,9 @@
             <l-marker :lat-lng="mapData.marker"> </l-marker>
           </l-map>
         </div>
+      </v-flex>
+      <v-flex xs12 text-xs-center class="cta">
+        <v-btn outline large color="#004b86" to="/schedule">Sieh dir die Agenda an</v-btn>
       </v-flex>
     </v-layout>
   </v-container>
@@ -79,8 +81,9 @@ export default class HomeContent extends Vue {
 
   get mapData() {
     const token = 'pk.eyJ1IjoiY2FwYmIiLCJhIjoiY2p5OXM4Nzc3MDZ0NzNka2hmam1qZm1xeCJ9.kGcqZDWgCKNju1Do2K0TDw';
+    const basePath = 'https://api.mapbox.com/styles/v1/capbb/cjy9wgiah0cf21cqx1c24v65e';
     return {
-      url: `https://api.mapbox.com/styles/v1/capbb/cjy9wgiah0cf21cqx1c24v65e/tiles/256/{z}/{x}/{y}?access_token=${token}`,
+      url: `${basePath}/tiles/256/{z}/{x}/{y}?access_token=${token}`,
       zoom: 30,
       center: latLng(48.891598, 9.200914),
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
@@ -102,10 +105,15 @@ export default class HomeContent extends Vue {
 
 
 <style scoped lang="scss">
+@import '../style/mixins/px-rem-converter.scss';
 @import '../style/mixins/breakpoint.scss';
 
 .map {
   width: 100%;
   height: 350px;
+}
+
+.cta {
+  margin: rem(70px) 0 rem(40px) 0;
 }
 </style>

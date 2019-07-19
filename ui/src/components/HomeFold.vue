@@ -17,7 +17,6 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import * as easings from 'vuetify/es5/util/easing-patterns';
 
 @Component
 export default class HomeFoldComponent extends Vue {}

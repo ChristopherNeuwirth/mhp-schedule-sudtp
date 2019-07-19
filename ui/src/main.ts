@@ -7,6 +7,7 @@ import router from './router';
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
+// @ts-ignore
 delete Icon.Default.prototype._getIconUrl;
 
 Icon.Default.mergeOptions({
