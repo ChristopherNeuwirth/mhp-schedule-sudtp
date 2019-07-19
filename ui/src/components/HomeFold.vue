@@ -67,6 +67,9 @@ export default class HomeFoldComponent extends Vue {}
     @include breakpoint('xs') {
       border: rem(10px) solid white;
     }
+    @include breakpoint('m') {
+      width: 50%;
+    }
   }
 
   &__headline {

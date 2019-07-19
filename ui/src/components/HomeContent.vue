@@ -1,44 +1,65 @@
 <template>
-  <v-container>
-    <v-layout wrap>
-      <v-flex xs12 id="about">
-        <p>Add Countdown visible as long as not at deadline</p>
+  <div>
+    <v-container>
+      <v-layout wrap>
+        <v-flex xs12 id="about">
+          <!-- <p>Add Countdown visible as long as not at deadline</p> -->
 
-        <h2>Summary</h2>
-        <p>
-          Wenn sie 10 Personen Fragen, was „Agile” bedeutet, werden Sie wahrscheinlich 10 verschiedene Antworten
-          erhalten. Dabei reichen die Perspektiven von Lean Management über Scrum bis hin zum Agile Coaching. Bei allen
-          Perspektiven ist aber gleich, dass diese neben agilen Kernprinzipien auch immer auf einem gemeinsamen Mindset,
-          Austausch und stetigem Lernen basieren. Genau hier möchten wir ansetzen.
-        </p>
-        <h2>Ziel</h2>
-        <p>
-          Basierend auf unseren unterschiedlichen Projekten und Einsätzen möchten wir den Tag nutzen, um neue Impulse
-          mitzunehmen und uns gegenseitig auszutauschen.
-        </p>
-        <p>Datum/ Zeit 18.10.2019 09:00 bis 15 Uhr //MAKE COOL</p>
-        <p>Ort MHP Lab Ludwigsburg Hindenburgstrasse 45 //MAKE MAP</p>
-      </v-flex>
-      <v-flex xs12>
-        <div class="map mapboxgl-map">
-          <l-map
-            :zoom="mapData.zoom"
-            :center="mapData.center"
-            :options="mapData.mapOptions"
-            style=""
-            @update:center="centerUpdate"
-            @update:zoom="zoomUpdate"
-          >
-            <l-tile-layer :url="mapData.url" :attribution="mapData.attribution" />
-            <l-marker :lat-lng="mapData.marker"> </l-marker>
-          </l-map>
-        </div>
-      </v-flex>
-      <v-flex xs12 text-xs-center class="cta">
-        <v-btn outline large color="#004b86" to="/schedule">Sieh dir die Agenda an</v-btn>
-      </v-flex>
-    </v-layout>
-  </v-container>
+          <h2 class="section-headline">Wieso Weshalb Warum</h2>
+          <p class="subheading">
+            Wenn sie 10 Personen Fragen, was <i>Agile</i> bedeutet, werden Sie wahrscheinlich 10 verschiedene Antworten
+            erhalten. Dabei reichen die Perspektiven von Lean Management über Scrum bis hin zum Agile Coaching. Bei
+            allen Perspektiven ist aber gleich, dass diese neben agilen Kernprinzipien auch immer auf einem gemeinsamen
+            Mindset, Austausch und stetigem Lernen basieren. Genau hier möchten wir ansetzen.
+          </p>
+          <div class="illustration__container">
+            <v-img :src="require('../assets/illustration.png')" class="my-3 illustration" contain></v-img>
+          </div>
+          <h2 class="section-headline">Das wollen wir erreichen</h2>
+          <p class="subheading">
+            Basierend auf unseren unterschiedlichen Projekten und Einsätzen möchten wir den Tag nutzen, um neue Impulse
+            mitzunehmen und uns gegenseitig auszutauschen.
+          </p>
+        </v-flex>
+      </v-layout>
+    </v-container>
+    <div>
+      <v-container>
+        <v-layout wrap>
+          <v-flex xs12>
+            <h2 class="section-headline">Datum</h2>
+            <p>Datum/ Zeit 18.10.2019 09:00 bis 15 Uhr //MAKE COOL</p>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </div>
+    <v-container>
+      <v-layout wrap>
+        <v-flex xs12>
+          <h2 class="section-headline">Location</h2>
+          <p>MHP Lab Ludwigsburg Hindenburgstrasse 45</p>
+        </v-flex>
+        <v-flex xs12>
+          <div class="map mapboxgl-map">
+            <l-map
+              :zoom="mapData.zoom"
+              :center="mapData.center"
+              :options="mapData.mapOptions"
+              style=""
+              @update:center="centerUpdate"
+              @update:zoom="zoomUpdate"
+            >
+              <l-tile-layer :url="mapData.url" :attribution="mapData.attribution" />
+              <l-marker :lat-lng="mapData.marker"> </l-marker>
+            </l-map>
+          </div>
+        </v-flex>
+        <v-flex xs12 text-xs-center class="cta">
+          <v-btn outline large color="#004b86" to="/schedule">Sieh dir die Agenda an</v-btn>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </div>
 </template>
 
 <script lang="ts">
@@ -107,13 +128,51 @@ export default class HomeContent extends Vue {
 <style scoped lang="scss">
 @import '../style/mixins/px-rem-converter.scss';
 @import '../style/mixins/breakpoint.scss';
+@import '../style/base/colors.scss';
 
 .map {
   width: 100%;
-  height: 350px;
+  height: rem(350px);
 }
 
 .cta {
   margin: rem(70px) 0 rem(40px) 0;
+}
+
+.subheading {
+  line-height: rem(33px);
+}
+
+.illustration {
+  // height: rem(300px);
+
+  @include breakpoint('s') {
+    height: inherit;
+  }
+
+  &__container {
+    margin-top: rem(70px);
+  }
+}
+
+.section-headline {
+  font-size: rem(30px);
+  line-height: rem(37px);
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: rem(50px) 0 rem(30px) 0;
+  color: $blue-default;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    border: 1px solid $blue-default;
+    width: rem(100px);
+    margin: rem(7px);
+    left: 50%;
+    margin-left: rem(-50px);
+  }
 }
 </style>
