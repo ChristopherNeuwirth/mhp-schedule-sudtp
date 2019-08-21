@@ -1,59 +1,53 @@
 [
   {
-    "headline": "Venenatis Amet Nibh Sollicitudin Magna",
-    "description": "Vivamus sagittis lacus vel Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo.",
-    "tags": ["Agile", "Test"],
+    "headline": "Coffee Starter",
+    "icon": "icons/coffee-cup.png",
     "time": {
       "hour": "08",
-      "minute": "00"
-    },
-    "speaker": {
-      "image": "speaker/11662358.jpeg",
-      "name": "John Doe",
-      "company": "Awesome Inc"
+      "minute": "45"
     }
   },
   {
-    "headline": "Parturient Bibendum Euismod Fringilla Dapibus",
-    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo.",
-    "tags": ["Awesome", "Power"],
+    "headline": "Event Opening and Welcome",
+    "description": "Micha eröffnet den SUDTP Agile Day im Namen des Orga-Teams.",
+    "tags": ["Welcome", "Keynote"],
     "time": {
       "hour": "09",
       "minute": "00"
     },
     "speaker": {
-      "image": "speaker/11662358.jpeg",
-      "name": "Max Musterman",
-      "company": "WTF GmbH"
+      "image": "speaker/micha-mueller.jpg",
+      "name": "Micha Müller",
+      "company": "MHP"
     }
   },
   {
-    "headline": "Kaffee Pause",
-    "icon": "icons/coffee-cup.png",
+    "headline": "Innovation Change Design",
+    "description": "",
+    "tags": ["Methoden", "Design Thinking", "Innovation"],
     "time": {
-      "hour": "10",
-      "minute": "00"
-    }
-  },
-  {
-    "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
-    "tags": ["Damn", "Nice"],
-    "time": {
-      "hour": "11",
-      "minute": "00"
+      "hour": "09",
+      "minute": "30"
     },
     "speaker": {
-      "image": "speaker/11662358.jpeg",
-      "name": "Jürgen Schmitt",
-      "company": "Agile GmbH"
+      "image": "speaker/Oliver-Boepple.jpg",
+      "name": "Oliver Böpple",
+      "company": "beweggrund"
+    }
+  },
+  {
+    "headline": "Mittagssnack",
+    "icon": "icons/fork.png",
+    "time": {
+      "hour": "12",
+      "minute": "30"
     }
   },
   {
     "headline": "Gemütliches Get-Together",
     "icon": "icons/beer.png",
     "time": {
-      "hour": "16",
+      "hour": "15",
       "minute": "00"
     }
   }

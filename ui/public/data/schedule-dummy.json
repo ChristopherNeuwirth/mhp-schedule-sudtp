@@ -1,0 +1,60 @@
+[
+  {
+    "headline": "Venenatis Amet Nibh Sollicitudin Magna",
+    "description": "Vivamus sagittis lacus vel Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo.",
+    "tags": ["Agile", "Test"],
+    "time": {
+      "hour": "08",
+      "minute": "00"
+    },
+    "speaker": {
+      "image": "speaker/11662358.jpeg",
+      "name": "John Doe",
+      "company": "Awesome Inc"
+    }
+  },
+  {
+    "headline": "Parturient Bibendum Euismod Fringilla Dapibus",
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo.",
+    "tags": ["Awesome", "Power"],
+    "time": {
+      "hour": "09",
+      "minute": "00"
+    },
+    "speaker": {
+      "image": "speaker/11662358.jpeg",
+      "name": "Max Musterman",
+      "company": "WTF GmbH"
+    }
+  },
+  {
+    "headline": "Kaffee Pause",
+    "icon": "icons/coffee-cup.png",
+    "time": {
+      "hour": "10",
+      "minute": "00"
+    }
+  },
+  {
+    "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+    "tags": ["Damn", "Nice"],
+    "time": {
+      "hour": "11",
+      "minute": "00"
+    },
+    "speaker": {
+      "image": "speaker/11662358.jpeg",
+      "name": "Jürgen Schmitt",
+      "company": "Agile GmbH"
+    }
+  },
+  {
+    "headline": "Gemütliches Get-Together",
+    "icon": "icons/beer.png",
+    "time": {
+      "hour": "16",
+      "minute": "00"
+    }
+  }
+]
