@@ -3,7 +3,7 @@
     "headline": "Coffee Starter",
     "icon": "icons/coffee-cup.png",
     "time": {
-      "hour": "08",
+      "hour": "09",
       "minute": "45"
     }
   },
@@ -12,7 +12,7 @@
     "description": "Micha eröffnet den SUDTP Agile Day im Namen des Orga-Teams.",
     "tags": ["Welcome", "Keynote"],
     "time": {
-      "hour": "09",
+      "hour": "10",
       "minute": "00"
     },
     "speaker": {
@@ -26,8 +26,8 @@
     "description": "",
     "tags": ["Methoden", "Design Thinking", "Innovation"],
     "time": {
-      "hour": "09",
-      "minute": "30"
+      "hour": "10",
+      "minute": "15"
     },
     "speaker": {
       "image": "speaker/Oliver-Boepple.jpg",
