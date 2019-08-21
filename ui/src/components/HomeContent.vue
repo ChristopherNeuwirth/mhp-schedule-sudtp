@@ -6,20 +6,26 @@
           <!-- <p>Add Countdown visible as long as not at deadline</p> -->
 
           <h2 class="section-headline">Wieso Weshalb Warum</h2>
-          <p class="subheading">
+          <p class="subheading center-on-desktop">
             Wenn sie 10 Personen Fragen, was <i>Agile</i> bedeutet, werden Sie wahrscheinlich 10 verschiedene Antworten
             erhalten. Dabei reichen die Perspektiven von Lean Management über Scrum bis hin zum Agile Coaching. Bei
             allen Perspektiven ist aber gleich, dass diese neben agilen Kernprinzipien auch immer auf einem gemeinsamen
             Mindset, Austausch und stetigem Lernen basieren. Genau hier möchten wir ansetzen.
           </p>
-          <div class="illustration__container">
-            <v-img :src="require('../assets/illustration.png')" class="my-3 illustration" contain></v-img>
-          </div>
-          <h2 class="section-headline">Das wollen wir erreichen</h2>
-          <p class="subheading">
-            Basierend auf unseren unterschiedlichen Projekten und Einsätzen möchten wir den Tag nutzen, um neue Impulse
-            mitzunehmen und uns gegenseitig auszutauschen.
-          </p>
+          <v-layout wrap>
+            <v-flex xs12>
+              <div class="illustration__container">
+                <v-img :src="require('../assets/illustration.png')" class="my-3 illustration" contain></v-img>
+              </div>
+            </v-flex>
+            <v-flex xs12 style="position: relative;">
+              <h2 class="section-headline">Das wollen wir erreichen</h2>
+              <p class="subheading center-on-desktop">
+                Basierend auf unseren unterschiedlichen Projekten und Einsätzen möchten wir den Tag nutzen, um neue
+                Impulse mitzunehmen und uns gegenseitig auszutauschen.
+              </p>
+            </v-flex>
+          </v-layout>
         </v-flex>
       </v-layout>
     </v-container>
@@ -154,11 +160,11 @@ export default class HomeContent extends Vue {
 }
 
 .illustration {
-  // height: rem(300px);
+  height: rem(250px);
 
-  @include breakpoint('s') {
-    height: inherit;
-  }
+  // @include breakpoint('s') {
+  //   height: inherit;
+  // }
 
   &__container {
     margin-top: rem(70px);
@@ -183,6 +189,12 @@ export default class HomeContent extends Vue {
     margin: rem(7px);
     left: 50%;
     margin-left: rem(-50px);
+  }
+}
+
+.center-on-desktop {
+  @include breakpoint('s') {
+    text-align: center;
   }
 }
 </style>
