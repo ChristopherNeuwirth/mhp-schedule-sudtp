@@ -5,7 +5,7 @@
         <div>
           <h1>Impressum</h1>
           <h2>Angaben gemäß § 5 TMG</h2>
-          <p>Christopheer Neuwirth<br />Königsallee 49<br />71638 Ludwigsburg</p>
+          <p>Christopher Neuwirth<br />Königsallee 49<br />71638 Ludwigsburg</p>
           <h2>Kontakt</h2>
           <p>Telefon: +49 151 20302825<br />E-Mail: kontakt@mhp.wtf-solutions.de</p>
           <h3>Haftung für Inhalte</h3>
