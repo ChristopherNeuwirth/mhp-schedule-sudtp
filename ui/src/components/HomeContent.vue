@@ -36,7 +36,7 @@
             <h2 class="section-headline">Wann</h2>
             <div class="centering">
               <p class="headline">Freitag, 18.10.2019</p>
-              <p class="title">09:00 bis 15 Uhr</p>
+              <p class="title">09:00 bis 15:00 Uhr</p>
             </div>
           </v-flex>
         </v-layout>
