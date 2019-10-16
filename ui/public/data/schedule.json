@@ -22,7 +22,7 @@
     }
   },
   {
-    "headline": "Innovation Change Design",
+    "headline": "Impulsvortrag \"The Next Agile\": Eine kleine ganzheitliche Reflektion",
     "description": "",
     "tags": ["Methoden", "Design Thinking", "Innovation"],
     "time": {
@@ -36,6 +36,24 @@
     }
   },
   {
+    "headline": "Sammeln, Reflektieren , Diskussion und erarbeiten von Kernstatements",
+    "description": "",
+    "tags": ["Workshop", "Group Work", "Define"],
+    "time": {
+      "hour": "11",
+      "minute": "15"
+    }
+  },
+  {
+    "headline": "Definition \"Agile\"",
+    "description": "",
+    "tags": [],
+    "time": {
+      "hour": "11",
+      "minute": "45"
+    }
+  },
+  {
     "headline": "Mittagssnack",
     "icon": "icons/fork.png",
     "time": {
@@ -44,11 +62,38 @@
     }
   },
   {
+    "headline": "Was sind Erfolgsfaktoren von Agile?",
+    "description": "",
+    "tags": [],
+    "time": {
+      "hour": "13",
+      "minute": "30"
+    }
+  },
+  {
+    "headline": "Design Sprint: Wie können wir Agile auf \"The next Level\" bringen?",
+    "description": "",
+    "tags": [],
+    "time": {
+      "hour": "14",
+      "minute": "00"
+    }
+  },
+  {
+    "headline": "Vorstellung und Feedback Ende",
+    "description": "",
+    "tags": [],
+    "time": {
+      "hour": "14",
+      "minute": "45"
+    }
+  },
+  {
     "headline": "Gemütliches Get-Together",
     "icon": "icons/beer.png",
     "time": {
       "hour": "15",
-      "minute": "00"
+      "minute": "15"
     }
   }
 ]
